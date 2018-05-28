@@ -19,7 +19,7 @@ public class GameDirector : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        float length = this.flag.transform.position.x - this.car.transform.position.x;
+        float length = this.flag.transform.position.x - this.car.transform.position.x - 0.65f;
         if (length >= 0)
         {
             this.distance.GetComponent<Text>().text = "ゴールまで" + length.ToString("F2") + "m";
